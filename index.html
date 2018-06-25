@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body> 
+    <header>
+      <h1 id="title">Survey Form</h1>        
+    </header>
+    <div class="container">
+      <p id="description">Let us know how we can improve freeCodeCamp</p>
+      <form id="survey-form">
+        <div class="form-element-layout">
+            <label id="name">*Name:</label>
+            <input type="text" id="name-label" placeholder="Enter your name">
+        </div>
+        <div class="form-element-layout">
+            <label id="email">*Email:</label>
+            <input type="email" id="email-label"  placeholder="Enter your email" required>   
+        </div>
+        <div class="form-element-layout">
+            <label id="number">*Age:</label>
+            <input type="number" id="number-label" required>
+        </div>
+        <div class="form-select1-layout">
+            <label id="select1">Which option best describes your current role?</label>  
+            <select id="dropdown">
+              <option>Student</option>
+              <option>Full Time Job</option>
+              <option>Full Time Learner</option>
+              <option>Prefer not to say</option>
+              <option>Other</option>         
+            </select> 
+        </div>
+        <div class="form-radio-layout">
+            <p id="radio-p">* How likely is that you would recommend freeCodeCamp to a friend?</p>
+            <label for="defi"><input type="radio" name="recommend" id="defi">Definitely</label>
+            <label for="maybe"><input type="radio" name="recommend" id="maybe">Maybe</label>
+            <label for="notsure"><input type="radio" name="recommend" id="notsure">Not sure</label>
+        </div>
+        <div class="form-select2-layout">
+            <label id="select2">What do you like most in FCC:</label>  
+            <select id="dropdown2">
+              <option selected disabled>Select an option</option>
+              <option>Challenges</option>
+              <option>Projects</option>
+              <option>Community</option>
+              <option>Open Source</option>     
+            </select>  
+        </div>
+        <div class="form-checkbox-layout">
+            <p id="checkbox-p">Things that should be improved in the future (Check all that apply):</p>
+            <label for="frontend"><input type="checkbox" name="improve" value="frontend" id="frontend">Front-end Projects</label>
+
+            <label for="backend"><input type="checkbox" name="improve" value="backend" id="backend">Back-end Projects</label>
+
+            <label for="data"><input type="checkbox" name="improve" value="data" id="data">Data Visualization</label>
+
+            <label for="challenge"><input type="checkbox" name="improve" value="challenge" id="challenge">Challenges</label>
+
+            <label for="open"><input type="checkbox" name="improve" value="open" id="open">Open Source Community</label>
+
+            <label for="gitter"><input type="checkbox" name="improve" value="gitter" id="gitter">Gitter help rooms</label>
+
+            <label for="video"><input type="checkbox" name="improve" value="video" id="video">Videos</label>
+
+            <label for="meetup"><input type="checkbox" name="improve" value="meetup" id="meetup">City Meetups</label>
+
+            <label for="wiki"><input type="checkbox" name="improve" value="wiki" id="wiki">Wiki</label>
+
+            <label for="forum"><input type="checkbox" name="improve" value="forum" id="forum">Forum</label>
+
+            <label for="additional"><input type="checkbox" name="improve" value="additional" id="additional">Additional Courses</label>
+        </div>
+        <div class="form-element-layout">
+            <label>Any Comments or Suggestions?</label>
+            <textarea>Enter your comment here...</textarea>
+        </div>
+        <div class="submit-layout">
+            <button id="submit">Submit</button>
+        </div>
+            
+            <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation -->
+
+      </form>
+      </div>
+
+  </body>
+</html>

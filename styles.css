@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/************* Small screen breakpoint width: 520px ***********/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    width: 100%;
+    background-color: #A6DDDD;
+}
+.container {
+    width: 80%;
+    margin: 0.8rem auto;
+    padding: 0.8rem 0.7rem;
+    background-color: white;
+    line-height: 2;
+}
+header {
+    margin: auto;
+    padding: 1.5rem 0 1rem;
+    text-align: center;
+}
+#description {
+    text-align: center;
+}
+#survey-form {
+    width: 90%;
+    margin: auto;
+    font-size: 1.1rem;
+}
+.form-element-layout,
+.form-select1-layout,
+.form-select2-layout,
+.form-radio-layout,
+.form-checkbox-layout,
+.submit-layout {
+    display: grid;
+    grid-template-rows: 1fr;
+    margin-bottom: 15px;
+}
+
+#submit {
+    width: 150px;
+    margin: 20px auto;
+    padding: 15px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    background-color: #35dee0;
+    border: none;
+    transition: ease-out 1s;
+}
+#submit:hover {
+    background-color: #16a9aa;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+input,
+select {
+    padding: 8px;
+    transition: ease-out 1s;
+    margin-right: 5px;
+}
+textarea {
+    padding: 8px 8px 20px;
+    transition: ease-out 1s;
+}
+input:focus,
+select:focus,
+textarea:focus {
+    border: 2px solid #35dee0;
+    background-color: #bffeff;
+}
+
+
+@media (min-width:521px) {
+    .container {
+        width: 70%;
+        line-height: 200%;
+    }
+    #survey-form {
+        font-size: 1rem;
+    }
+    #description {
+        margin-bottom: 20px;
+    }
+    .form-element-layout,
+    .form-select1-layout,
+    .form-select2-layout,
+    .form-radio-layout,
+    .form-checkbox-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;        
+    }
+    
+    .form-element-layout label {
+        text-align: right;
+        padding-right: 20px;
+    }    
+    
+    /* Radio input grid layout  */
+    .form-radio-layout {
+        display: grid;
+        grid-template-areas:
+            "right leftR1"
+            "right leftR2"
+            "right leftR3";
+    }
+    #radio-p {
+        grid-area: right;
+        text-align: right;
+        padding-right: 20px;
+    }
+    label[for="defi"] {
+        grid-area: leftR1;
+    }
+    label[for="maybe"] {
+        grid-area: leftR2;
+    }
+    label[for="notsure"] {
+        grid-area: leftR3;
+    }
+    
+    /* Checkbox input grid layout  */
+    .form-checkbox-layout {
+        display: grid;
+        grid-template-areas:
+            "rightC leftC1"
+            "rightC leftC2"
+            "rightC leftC3"
+            "rightC leftC4"
+            "rightC leftC5"
+            "rightC leftC6"
+            "rightC leftC7"
+            "rightC leftC8"
+            "rightC leftC9"
+            "rightC leftC10"
+            "rightC leftC11";       
+    }
+    #checkbox-p {
+        grid-area: rightC;
+        text-align: right;
+        padding-right: 20px;
+    }
+    label[for="frontend"] {
+        grid-area: leftC1;
+    }
+    label[for="backend"] {
+        grid-area: leftC2;
+    }
+    label[for="data"] {
+        grid-area: leftC3;
+    }
+    label[for="challenge"] {
+        grid-area: leftC4;
+    }
+    label[for="open"] {
+        grid-area: leftC5;
+    }
+    label[for="gitter"] {
+        grid-area: leftC6;
+    }
+    label[for="video"] {
+        grid-area: leftC7;
+    }
+    label[for="meetup"] {
+        grid-area: leftC8;
+    }
+    label[for="wiki"] {
+        grid-area: leftC9;
+    }
+    label[for="forum"] {
+        grid-area: leftC10;
+    }
+    label[for="additional"] {
+        grid-area: leftC11;
+    }    
+    .form-select1-layout,
+    .form-select2-layout,
+    .form-radio-layout,
+    .form-checkbox-layout {
+        display: grid;
+        grid-template-areas: 1fr;
+    }
+    #select1, 
+    #select2 {
+        text-align: right;
+        padding-right: 20px;
+        line-height: 120%;
+    }
+    
+}
+
+
