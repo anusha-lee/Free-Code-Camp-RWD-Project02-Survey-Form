@@ -108,78 +108,78 @@ textarea:focus {
     .form-radio-layout {
         display: grid;
         grid-template-areas:
-            "right leftR1"
-            "right leftR2"
-            "right leftR3";
+            "left rightR1"
+            "left rightR2"
+            "left rightR3";
     }
     #radio-p {
-        grid-area: right;
+        grid-area: left;
         text-align: right;
         padding-right: 20px;
     }
     label[for="defi"] {
-        grid-area: leftR1;
+        grid-area: rightR1;
     }
     label[for="maybe"] {
-        grid-area: leftR2;
+        grid-area: rightR2;
     }
     label[for="notsure"] {
-        grid-area: leftR3;
+        grid-area: rightR3;
     }
     
     /* Checkbox input grid layout  */
     .form-checkbox-layout {
         display: grid;
         grid-template-areas:
-            "rightC leftC1"
-            "rightC leftC2"
-            "rightC leftC3"
-            "rightC leftC4"
-            "rightC leftC5"
-            "rightC leftC6"
-            "rightC leftC7"
-            "rightC leftC8"
-            "rightC leftC9"
-            "rightC leftC10"
-            "rightC leftC11";       
+            "leftC rightC1"
+            "leftC rightC2"
+            "leftC rightC3"
+            "leftC rightC4"
+            "leftC rightC5"
+            "leftC rightC6"
+            "leftC rightC7"
+            "leftC rightC8"
+            "leftC rightC9"
+            "leftC rightC10"
+            "leftC rightC11";       
     }
     #checkbox-p {
-        grid-area: rightC;
+        grid-area: leftC;
         text-align: right;
         padding-right: 20px;
     }
     label[for="frontend"] {
-        grid-area: leftC1;
+        grid-area: rightC1;
     }
     label[for="backend"] {
-        grid-area: leftC2;
+        grid-area: rightC2;
     }
     label[for="data"] {
-        grid-area: leftC3;
+        grid-area: rightC3;
     }
     label[for="challenge"] {
-        grid-area: leftC4;
+        grid-area: rightC4;
     }
     label[for="open"] {
-        grid-area: leftC5;
+        grid-area: rightC5;
     }
     label[for="gitter"] {
-        grid-area: leftC6;
+        grid-area: rightC6;
     }
     label[for="video"] {
-        grid-area: leftC7;
+        grid-area: rightC7;
     }
     label[for="meetup"] {
-        grid-area: leftC8;
+        grid-area: rightC8;
     }
     label[for="wiki"] {
-        grid-area: leftC9;
+        grid-area: rightC9;
     }
     label[for="forum"] {
-        grid-area: leftC10;
+        grid-area: rightC10;
     }
     label[for="additional"] {
-        grid-area: leftC11;
+        grid-area: rightC11;
     }    
     .form-select1-layout,
     .form-select2-layout,
